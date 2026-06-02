@@ -1,0 +1,37 @@
+
+VISIONGUARD PROJECT RESULTS SUMMARY
+=====================================
+
+OBJECT DETECTION (YOLOv8 Fine-tuned):
+  Training images   : 3438
+  Validation images : 749
+  Classes           : 10
+  Overall mAP50     : 0.777
+  Overall mAP50-95  : 0.515
+
+PER CLASS RESULTS:
+  autorickshaw   : 0.984
+  bicycle        : 0.888
+  bike           : 0.995
+  bus            : 0.950
+  car            : 0.967
+  cycle          : 0.862
+  motorbike      : 0.800
+  person         : 0.052
+  tractor        : 0.492
+
+RL ALERT AGENT (PPO):
+  Training steps    : 200,000
+  Average reward    : 10.89
+  Correct alerts    : 963/1000
+  Missed alerts     : 16/1000
+  False alarms      : 21/1000
+
+FILES SAVED TO DRIVE:
+  models/visionguard_best.pt
+  models/alert_policy_agent.zip
+  results/detection_results.png
+  results/rl_performance.png
+  results/depth_analysis.png
+  results/visionguard_demo.mp4
+  results/demo_frame_1-4.png
